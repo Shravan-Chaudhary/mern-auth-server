@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import bcyrpt from 'bcryptjs'
 
 const userSchema = mongoose.Schema({
     name: {
@@ -16,6 +17,15 @@ const userSchema = mongoose.Schema({
     },
 }, {
     timestamps: true
+})
+
+userSchema.pre('save', async function (next) {
+    if(!this.isModified('password')){
+        next()
+    }
+
+    const salt = await bcyrpt.genSalt(10)
+    this.password = await bcyrpt.hash(this.password, salt)
 })
 
 const User = mongoose.model('User', userSchema)
