@@ -1,5 +1,4 @@
 # [MERN-Auth]
-<<<<<<< HEAD
 
 This is an open source authentication application build with NodeJs, MongoDb, ReactJs and Redux.
 
@@ -38,6 +37,3 @@ Contributions are welcome! Please open an issue if you have any questions or sug
 ## License
 
 Licensed under the MIT License. Check the [LICENSE](./LICENSE) file for details.
-=======
-This is an open source authentication application build with NodeJs, MongoDb, ReactJs and Redux.
->>>>>>> 039726039273a4e726ac8b0716be2c0ed7ef4a42
