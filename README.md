@@ -13,8 +13,13 @@ This is an open source authentication application build with NodeJs, MongoDb, Re
 
 ## Features to be implemented
 
-- [x] Authentication with **Clerk**
-- [x] Register User
+- [x] Register User Endpoint
+- [x] Login User Endpoint
+- [x] Logout User Endpoint
+- [x] Update User Endpoint
+- [x] JWT Authentication Middleware
+- [] UI
+- [] State management with Redux Toolkit
 
 ## Running Locally
 
