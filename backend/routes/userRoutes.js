@@ -1,6 +1,5 @@
 import express from 'express'
 import { protect } from '../middleware/authMiddleware.js'
-const router = express.Router()
 import {
   authUser,
   logoutUser,
@@ -8,6 +7,8 @@ import {
   updateUserProfile,
   registerUser,
 } from '../controllers/userController.js'
+
+const router = express.Router()
 
 //  Routes
 router.post('/', registerUser)
