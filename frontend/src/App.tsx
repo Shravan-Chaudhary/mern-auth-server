@@ -1,14 +1,14 @@
 import './App.css'
-import { Button } from './components/ui/button'
+// import { Button } from './components/ui/button'
+import Header from "@/components/Header.tsx";
+import HomeScreen from "@/screens/HomeScreen.tsx";
 
 function App() {
   return (
-    <>
-      <h1 className='text-5xl'>Hello</h1>
-      <Button variant='outline' size='lg'>
-        Hello
-      </Button>
-    </>
+    <div >
+     <Header />
+        <HomeScreen />
+    </div>
   )
 }
 
